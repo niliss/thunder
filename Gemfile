@@ -14,6 +14,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'devise'
 gem 'gravatar-ultimate'
 
+gem 'eventmachine', '~> 1.0.7'
+
 group :development do
   gem 'pry' #debugger
   gem 'spring'

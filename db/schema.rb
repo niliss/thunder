@@ -11,12 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141010105120) do
+ActiveRecord::Schema.define(version: 20150226155121) do
 
   create_table "likes", force: true do |t|
     t.integer  "user_id"
     t.integer  "friend_id"
     t.boolean  "liked"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "matches", force: true do |t|
+    t.string   "user"
+    t.string   "match"
+    t.string   "email"
+    t.string   "login"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
